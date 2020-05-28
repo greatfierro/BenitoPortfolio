@@ -40,8 +40,11 @@ p {
   align-items: center;
 }
 .navbar .logo {
-  font-size: 5rem;
+  font-size: 4rem;
+  letter-spacing: 8px;
   color: var(--primary-color);
+  font-weight: 300;
+  margin-bottom: 15px;
 }
 
 /* Navbar */
@@ -50,8 +53,9 @@ p {
 }
 
 .navbar ul li a {
-  padding: 10px 20px;
+  padding: 10px 25px;
   margin: 0 5px;
+  font-size: 13px;
 }
 
 .navbar ul li a:hover {
@@ -61,6 +65,24 @@ p {
 
 /* Shwocase */
 .showcase {
-  background: url("./images/showcase.jpg");
-  height: 100vh;
+  background: url("./images/home.png") no-repeat;
+  height: 70vh;
+}
+
+.showcase .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.showcase .content h2 {
+  font-size: 2.3rem;
+  font-weight: 300;
+}
+
+/* About */
+.about {
 }
