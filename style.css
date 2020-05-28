@@ -79,10 +79,9 @@ p {
 }
 
 .showcase .content h2 {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   font-weight: 300;
+  margin-bottom: 2rem;
 }
 
 /* About */
-.about {
-}

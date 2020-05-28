@@ -3,3 +3,17 @@
   --secondary-color: #7d7373;
   --third-color: #7f8551;
 }
+
+.btn {
+  background-color: var(--third-color);
+  color: #fff;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  box-shadow: 2px 5px 5px var(--secondary-color);
+}
+
+.btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
