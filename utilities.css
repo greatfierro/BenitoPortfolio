@@ -17,3 +17,11 @@
   opacity: 0.8;
   cursor: pointer;
 }
+
+/* Flex-Items */
+
+.flex-items {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
