@@ -25,3 +25,23 @@
   justify-content: space-evenly;
   text-align: center;
 }
+
+/* Column Items */
+.column-items {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section Title */
+.section-title {
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.portfolio-items {
+  display: flex;
+  justify-content: center;
+  flex: 25%;
+}

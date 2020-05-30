@@ -65,10 +65,10 @@ p {
 
 /* Shwocase */
 .showcase {
-  background: url("./images/home.png") no-repeat center center/cover;
-  height: 85vh;
+  background: url("./images/test3.jpg") no-repeat;
+  height: 86vh;
   position: relative;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .showcase .content {
@@ -85,12 +85,56 @@ p {
   margin-bottom: 2rem;
 }
 
-#skills {
-  height: 30vh;
-  margin-top: 30px;
+/* Skills */
+#skills .column-items h2 {
+  font-size: 1.5rem;
+  margin: 30px 0;
+  text-align: center;
 }
 
-.flex-items .skill-3 i {
-  color: #e6e600;
+#skills .column-items .flex-items h3 {
+  margin-top: 10px;
+}
+
+#skills .column-items .flex-items .skill-1 i {
+  color: #f16529;
   font-size: 4rem;
+}
+
+#skills .column-items .flex-items .skill-2 i {
+  color: #264de4;
+  font-size: 4rem;
+}
+
+#skills .column-items .flex-items .skill-3 i {
+  color: #f0db4f;
+  font-size: 4rem;
+}
+
+#skills .column-items .flex-items .skill-4 i {
+  color: #68a063;
+  font-size: 4rem;
+}
+
+#skills .column-items .flex-items .skill-5 i {
+  color: #f29111;
+  font-size: 4rem;
+}
+
+#skills .column-items .flex-items .skill-6 i {
+  color: #7f7a7c;
+  font-size: 4rem;
+}
+
+/* Portfolio */
+#portfolio {
+  padding: 5px;
+}
+
+#portfolio img {
+  border-radius: 1%;
+}
+
+#portfolio img:hover {
+  opacity: 0.9;
 }
