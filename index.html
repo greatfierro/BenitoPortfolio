@@ -1,92 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Benito Patino</title>
-    <link rel="stylesheet" href="utilities.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
-      crossorigin="anonymous"
-    />
-  </head>
 
-  <body id="home">
-    <header>
-      <div class="navbar">
-        <h1 class="logo">Benito Patino</h1>
-        <nav>
-          <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="">CONTACT</a></li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benito Patino</title>
+  <link rel="stylesheet" href="utilities.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+</head>
+
+<body id="home">
+  <header>
+    <div class="navbar">
+      <h1 class="logo">Benito Patino</h1>
+      <nav>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="showcase">
+      <div class="content">
+        <h2 class="job-title"></h2>
+        <a href="#skills" class="btn"><i class="fas fa-angle-right"></i> Read More</a>
       </div>
-      <div class="showcase">
-        <div class="content">
-          <h2 class="job-title"></h2>
-          <a href="#skills" class="btn"
-            ><i class="fas fa-angle-right"></i> Read More</a
-          >
+    </div>
+  </header>
+  <main>
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="column-items">
+        <h2>
+          Front End Skills
+        </h2>
+        <div class="flex-items">
+          <div class="skill-1">
+            <i class="fab fa-html5"></i>
+            <h3>HTML 5</h3>
+          </div>
+          <div class="skill-2">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS</h3>
+          </div>
+          <div class="skill-3">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+          </div>
+        </div>
+        <h2>
+          Back End Skills
+        </h2>
+        <div class="flex-items">
+          <div class="skill-4">
+            <i class="fab fa-node"></i>
+            <h3>NodeJs</h3>
+          </div>
+          <div class="skill-5">
+            <i class="fas fa-database"></i>
+            <h3>SQL/NoSQL</h3>
+          </div>
+          <div class="skill-6">
+            <i class="fas fa-cogs"></i>
+            <h3>Web API</h3>
+          </div>
         </div>
       </div>
-    </header>
-    <main>
-      <section id="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="column-items">
-          <h2>
-            Front End Skills
-          </h2>
-          <div class="flex-items">
-            <div class="skill-1">
-              <i class="fab fa-html5"></i>
-              <h3>HTML 5</h3>
-            </div>
-            <div class="skill-2">
-              <i class="fab fa-css3-alt"></i>
-              <h3>CSS</h3>
-            </div>
-            <div class="skill-3">
-              <i class="fab fa-js"></i>
-              <h3>JavaScript</h3>
-            </div>
-          </div>
-          <h2>
-            Back End Skills
-          </h2>
-          <div class="flex-items">
-            <div class="skill-4">
-              <i class="fab fa-node"></i>
-              <h3>NodeJs</h3>
-            </div>
-            <div class="skill-5">
-              <i class="fas fa-database"></i>
-              <h3>SQL/NoSQL</h3>
-            </div>
-            <div class="skill-6">
-              <i class="fas fa-cogs"></i>
-              <h3>Web API</h3>
-            </div>
-          </div>
-        </div>
-      </section>
+    </section>
 
-      <section id="portfolio">
-        <h2 class="section-title">Portfolio</h2>
-        <div class="portfolio-items">
-          <div class="item">
-            <img src="./images/portfolio/item-1.JPG" alt="" />
-          </div>
+    <section id="portfolio" class="flex-grid section-padding">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="row">
+        <div class="column">
+          <a href="http://www.renee-smith.com" target="_blank">
+            <img src="images/portfolio/test.jpg" alt="" />
+          </a>
+          <img src="images/portfolio/test.jpg" alt="" />
         </div>
-      </section>
-    </main>
+        <div class="column">
+          <img src="images/portfolio/test.jpg" alt="" />
+          <img src="images/portfolio/test.jpg" alt="" />
+        </div>
+        <div class="column">
+          <img src="images/portfolio/test.jpg" alt="" />
+          <img src="images/portfolio/test.jpg" alt="" />
+        </div>
+        <div class="column">
+          <img src="images/portfolio/test.jpg" alt="" />
+          <img src="images/portfolio/test.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <script src="typingEffect.js"></script>
-  </body>
+  <script src="typingEffect.js"></script>
+</body>
+
 </html>
