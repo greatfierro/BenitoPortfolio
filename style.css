@@ -69,7 +69,7 @@ p {
 
 /* Shwocase */
 .showcase {
-  background: url("./images/test3.jpg") no-repeat;
+  background: url("./images/test3.jpg") no-repeat center;
   height: 86vh;
   position: relative;
   margin-top: 20px;
@@ -159,7 +159,7 @@ p {
 }
 
 #main-footer i {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 15px 10px;
 }
 
