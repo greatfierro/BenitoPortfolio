@@ -73,8 +73,8 @@
 
 /* Form */
 form {
-  width: 50%;
   display: inline-block;
+  width: 40%;
 }
 
 label {
@@ -91,4 +91,15 @@ textarea {
   padding: 12px 20px;
   margin: 8px 0;
   display: block;
+  border: 1px var(--third-color) solid;
+}
+
+textarea {
+  height: 150px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
 }
