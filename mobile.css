@@ -1,0 +1,41 @@
+/* @media only screen and (m-width: 2300px) {
+  .showcase {
+    background: url("./images/test3.jpg") no-repeat center center/cover;
+  }
+} */
+
+@media only screen and (min-width: 1762px) {
+  .showcase {
+    background: url("./images/test3.jpg") no-repeat;
+  }
+}
+
+@media only screen and (max-width: 1761px) {
+  .showcase {
+    background: url("./images/test3.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media only screen and (max-width: 1488px) {
+  .showcase {
+    background: url("./images/test3.jpg");
+    background-repeat: no-repeat;
+    background-position: -50% 0%;
+    background-size: contain;
+  }
+}
+
+@media only screen and (max-width: 1412px) {
+  .showcase {
+    background: none;
+    height: 800px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #home .navbar .logo {
+    font-size: 2.5rem;
+  }
+}
