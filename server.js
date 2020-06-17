@@ -3,11 +3,10 @@ const nodemailer = require("nodemailer");
 const app = express();
 
 // bring in mail service
-const mail = require("./app");
 
 const PORT = 5000;
 
-app.get("/send", (res, req) => {
+app.post("/send", (res, req) => {
   main();
 });
 
@@ -15,14 +14,13 @@ app.get("/send", (res, req) => {
 async function main() {
   let testAcct = await nodemailer.createTestAccount();
 
-  // create transporter
-  // create reusable transporter object using the default SMTP transport
+  // send mail with defined transport object
   const transporter = nodemailer.createTransport({
     host: "smtp.ethereal.email",
     port: 587,
     auth: {
-      user: "lily82@ethereal.email",
-      pass: "Rr1eKJuKxc1pVtb4vx",
+      user: "constance.schmeler@ethereal.email",
+      pass: "Dar3xh5K2VaJc7H9qU",
     },
   });
 
