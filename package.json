@@ -19,6 +19,7 @@
   "homepage": "https://github.com/benitopatino/BenitoPortfolio#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-validator": "^6.5.0",
     "nodemailer": "^6.4.8",
     "nodemon": "^2.0.4"
   }
