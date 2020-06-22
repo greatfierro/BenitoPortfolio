@@ -145,7 +145,8 @@ p {
   text-align: center;
 }
 
-#contact-section .form-section button {
+#contact-section .form-section button,
+input[type="submit"] {
   margin: 30px;
   box-shadow: none;
 }
