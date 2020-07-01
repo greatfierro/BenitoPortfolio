@@ -7,11 +7,12 @@ form.addEventListener("submit", submitForm);
 // Submit Form
 function submitForm(e) {
   // get all form input values
-  const name = document.querySelector("#name").value;
+  const name = document.querySelector("#name").vsalue;
   const email = document.querySelector("#email").value;
   const subject = document.querySelector("#subject").value;
   const message = document.querySelector("#message").value;
   const captcha = document.querySelector("#g-recaptcha-response").value;
+  const msg = document.querySelector(".msg");
   fetch("/submit", {
     method: "POST",
     headers: {
@@ -28,7 +29,22 @@ function submitForm(e) {
   })
     .then((res) => res.json())
     .then((data) => {
-      console.log(data.msg);
+      if (!data.success) {
+        msg.textContent = data.msg;
+        msg.style.color = "red";
+
+        setTimeout(() => {
+          msg.style.display = "none";
+        }, 5000);
+      } else {
+        msg.textContent = "Message Sent!";
+        msg.style.color = "green";
+
+        setTimeout(() => {
+          location.reload();
+          msg.style.display = "none";
+        }, 1000);
+      }
     });
   e.preventDefault();
 }
