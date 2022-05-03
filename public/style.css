@@ -43,6 +43,7 @@ p {
   flex-direction: column;
   align-items: center;
 }
+
 .navbar .logo {
   font-size: 4rem;
   letter-spacing: 8px;
@@ -69,7 +70,7 @@ p {
 
 /* Shwocase */
 .showcase {
-  background: url("./images/test3.jpg") no-repeat center;
+  background: url("./images/home.jpg") no-repeat center;
   height: 86vh;
   position: relative;
   margin-top: 20px;
@@ -116,7 +117,7 @@ p {
 }
 
 #skills .column-items .flex-items .skill-4 i {
-  color: #68a063;
+  color: #6373a0;
   font-size: 4rem;
 }
 
@@ -138,17 +139,6 @@ p {
 #portfolio img:hover {
   opacity: 0.9;
   cursor: pointer;
-}
-
-/* Contact Area */
-#contact-section .form-section {
-  text-align: center;
-}
-
-#contact-section .form-section button,
-input[type="submit"] {
-  margin: 30px;
-  box-shadow: none;
 }
 
 /* Footer */

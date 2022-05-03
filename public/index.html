@@ -1,176 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Benito Patino</title>
-    <link rel="stylesheet" href="utilities.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mobile.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  </head>
 
-  <body id="home">
-    <header>
-      <div class="navbar">
-        <h1 class="logo">Benito Patino</h1>
-        <nav>
-          <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#contact-section">CONTACT</a></li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benito Patino</title>
+  <link rel="stylesheet" href="utilities.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mobile.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body id="home">
+  <header>
+    <div class="navbar">
+      <h1 class="logo">Benito Patino</h1>
+      <nav>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="showcase">
+      <div class="content">
+        <h2 class="job-title"></h2>
+        <a href="#skills" class="btn"><i class="fas fa-angle-right"></i> Read More</a>
       </div>
-      <div class="showcase">
-        <div class="content">
-          <h2 class="job-title"></h2>
-          <a href="#skills" class="btn"
-            ><i class="fas fa-angle-right"></i> Read More</a
-          >
+    </div>
+  </header>
+  <main>
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="column-items">
+        <h2>
+          Front End Skills
+        </h2>
+        <div class="flex-items">
+          <div class="skill-1">
+            <i class="fab fa-html5"></i>
+            <h3>HTML 5</h3>
+          </div>
+          <div class="skill-2">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS</h3>
+          </div>
+          <div class="skill-3">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+          </div>
+        </div>
+        <h2>
+          Back End Skills
+        </h2>
+        <div class="flex-items">
+          <div class="skill-4">
+            <i class="fa-brands fa-microsoft"></i>
+            <h3>C#</h3>
+          </div>
+          <div class="skill-5">
+            <i class="fas fa-database"></i>
+            <h3>Microsoft Sql Server</h3>
+          </div>
+          <div class="skill-6">
+            <i class="fas fa-cogs"></i>
+            <h3>ASP Net </h3>
+          </div>
         </div>
       </div>
-    </header>
-    <main>
-      <section id="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="column-items">
-          <h2>
-            Front End Skills
-          </h2>
-          <div class="flex-items">
-            <div class="skill-1">
-              <i class="fab fa-html5"></i>
-              <h3>HTML 5</h3>
-            </div>
-            <div class="skill-2">
-              <i class="fab fa-css3-alt"></i>
-              <h3>CSS</h3>
-            </div>
-            <div class="skill-3">
-              <i class="fab fa-js"></i>
-              <h3>JavaScript</h3>
-            </div>
-          </div>
-          <h2>
-            Back End Skills
-          </h2>
-          <div class="flex-items">
-            <div class="skill-4">
-              <i class="fab fa-node"></i>
-              <h3>NodeJs</h3>
-            </div>
-            <div class="skill-5">
-              <i class="fas fa-database"></i>
-              <h3>SQL/NoSQL</h3>
-            </div>
-            <div class="skill-6">
-              <i class="fas fa-cogs"></i>
-              <h3>Web API</h3>
-            </div>
-          </div>
+    </section>
+    <!-- <section id="portfolio" class="flex-grid section-padding">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="row">
+        <div class="column">
+          <a href="http://www.renee-smith.com" target="_blank">
+            <img src="images/portfolio/test.jpg" alt="" />
+          </a>
+          <img src="images/portfolio/test.jpg" alt="" />
         </div>
-      </section>
-      <section id="portfolio" class="flex-grid section-padding">
-        <h2 class="section-title">Portfolio</h2>
-        <div class="row">
-          <div class="column">
-            <a href="http://www.renee-smith.com" target="_blank">
-              <img src="images/portfolio/test.jpg" alt="" />
-            </a>
-            <img src="images/portfolio/test.jpg" alt="" />
-          </div>
-          <div class="column">
-            <img src="images/portfolio/test.jpg" alt="" />
-            <img src="images/portfolio/test.jpg" alt="" />
-          </div>
-          <div class="column">
-            <img src="images/portfolio/test.jpg" alt="" />
-            <img src="images/portfolio/test.jpg" alt="" />
-          </div>
-          <div class="column">
-            <img src="images/portfolio/test.jpg" alt="" />
-            <img src="images/portfolio/test.jpg" alt="" />
-          </div>
+        <div class="column">
+          <img src="images/portfolio/test.jpg" alt="" />
+          <img src="images/portfolio/test.jpg" alt="" />
         </div>
-      </section>
-
-      <section id="contact-section">
-        <div>
-          <div class="form-section">
-            <h2 class="section-title">Contact</h2>
-            <form id="contact-form">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
-              </div>
-              <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" name="subject" id="subject" />
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="10"
-                ></textarea>
-              </div>
-
-              <div id="captch-msg">
-                <p class="msg"></p>
-              </div>
-              <div class="form-group">
-                <div
-                  class="g-recaptcha"
-                  data-sitekey="6LcfBKcZAAAAAOgWctXhTta2aOPqpyP5BwztXxgT"
-                ></div>
-              </div>
-              <input type="submit" value="Submit" class="btn" />
-              <br />
-            </form>
-          </div>
+        <div class="column">
+          <img src="images/portfolio/test.jpg" alt="" />
+          <img src="images/portfolio/test.jpg" alt="" />
         </div>
-      </section>
-    </main>
-    <footer id="main-footer">
-      <a
-        href="https://www.linkedin.com/in/benito-patino-380bb5155/"
-        target="_blank"
-        ><i class="fab fa-linkedin"></i
-      ></a>
-      <a href="https://github.com/benitopatino" target="_blank"
-        ><i class="fab fa-github-square"></i
-      ></a>
-      <a
-        href="https://www.youtube.com/channel/UCmjI5rTlKoidvmxGIYrVSLQ"
-        target="_blank"
-        ><i class="fab fa-youtube"></i
-      ></a>
-      <a href="https://www.instagram.com/_benitopatino/" target="_blank"
-        ><i class="fab fa-instagram-square"></i
-      ></a>
+        <div class="column">
+          <img src="images/portfolio/test.jpg" alt="" />
+          <img src="images/portfolio/test.jpg" alt="" />
+        </div>
+      </div>
+    </section> -->
+  </main>
+  <footer id="main-footer">
+    <a href="https://www.linkedin.com/in/benito-patino-380bb5155/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/benitopatino" target="_blank"><i class="fab fa-github-square"></i></a>
+    <a href="https://www.youtube.com/channel/UCmjI5rTlKoidvmxGIYrVSLQ" target="_blank"><i
+        class="fab fa-youtube"></i></a>
+    <a href="https://www.instagram.com/_benitopatino/" target="_blank"><i class="fab fa-instagram-square"></i></a>
 
-      <p>Benito Patino &copy;</p>
-    </footer>
-    <script src=" typingEffect.js"></script>
-    <script src="app.js"></script>
-  </body>
+    <p>Benito Patino &copy;</p>
+  </footer>
+  <script src=" typingEffect.js"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>
