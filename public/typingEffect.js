@@ -1,5 +1,5 @@
 const title = document.querySelector(".job-title");
-const text = "Full Stack Developer";
+const text = "Full Stack .Net Developer";
 let i = 0;
 
 function typing() {
